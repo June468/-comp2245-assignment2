@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    color: #2D3748;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sansserif;
+}
+
+header {
+    grid-column: span 2;
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #63B3ED;
+    color: #FFF;
+}
+    
+.container {
+    display: grid;
+    grid-template-areas: "header header"
+                         "main aside"
+                         "footer footer";
+    grid-template-columns: 4fr 2fr;
+}
+
+.box {
+    
+    padding: 1em;
+    text-align: center;
+  }
+  
+h1,
+  p {
+    margin: 0;    
+  }
+
+.box2 {
+    
+    padding: 1em;
+    text-align: left;
+  }
+h2,
+  p {
+    margin: 0;    
+  }
+
+main {
+        grid-area: main;
+        margin-right: 60px;
+        margin-left: 150px;
+}
+
+.Title {
+        font-size: 32px;
+        color: #48BB78;
+    }
+
+.info {
+        color: #718096;
+    }
+
+header h1 {
+        font-size: 36px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    main,
+    aside {
+        margin: 40px;
+    }
+    
+    aside {
+        grid-column: 2;
+        padding: 16px;
+    }
+    
+    footer {
+        grid-column: 1/3;
+    }
+    
+    img[src="me.jpeg.jpg"] {
+        width: 250px; 
+        height: 250px;
+        border-radius: 50%;
+        
+    }
+    
+    #post1 {
+        float: right;
+    }
+    
+    #post2 {
+        float: left;
+    }
+    
+    img[src="mind.jpg.jpg"] {
+        float: right; 
+        width: 250px;
+        height: 250px;
+    }
+    
+    img[src="society.jpg.jpg"]{
+        float:left; 
+        width: 250px; 
+        height: 250px;
+    }
+    
+    #post2 {
+        clear: both;
+    }
+    
+    .sidebar h3 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    #social_media,
+    #archive {
+        color: #48BB78;
+    }
+    
+   
+    
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    ul li a {
+        color: #4299E1;
+        text-decoration: none;
+    }
+
+    .about {
+        color: #000000;
+        background-color: #E2E8F0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    footer {
+        clear: both;
+        background-color: #2C5282;
+        color: #FFFFFF;
+        padding-left: 60px;
+    }
